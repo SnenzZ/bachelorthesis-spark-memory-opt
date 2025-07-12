@@ -56,7 +56,7 @@ Dies lädt die Datei `web-Google.txt` als Kantenliste und startet z. B. PageRa
 - **Graphcharakteristika**, die Speicherbedarf beeinflussen (z. B. Knotenzahl, Gradverteilung)
 - **Laufzeit- und GC-Analysen**
 
-Tests erfolgen lokal und auf dem HPC-Cluster der TU Berlin.
+Tests erfolgen lokal und auf dem Cluster auf der Google Cloud Platform.
 
 ---
 
