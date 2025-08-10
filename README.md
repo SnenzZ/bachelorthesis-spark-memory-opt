@@ -12,7 +12,7 @@ Ziel der Arbeit ist es, das Speicherverhalten von Graph-Algorithmen (z. B. Pag
 
 ```
 .
-├── GraphAlgorithmRunner.scala   # Hauptprogramm zum Ausführen von Graph-Algorithmen
+├── Main.scala   # Hauptprogramm zum Ausführen von Graph-Algorithmen
 ├── build.sbt                    # Scala-Build-Konfiguration
 ├── data/                        # Beispieldatensätze (z. B. web-Google.txt)
 ├── results/                     # Logs, Output-Daten und Diagramme
