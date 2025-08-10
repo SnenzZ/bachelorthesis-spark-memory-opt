@@ -65,9 +65,9 @@ object Main {
         println(s"Unbekannter Algorithmus '$algoName'. Verfügbare: ${algos.keys.mkString(", ")}")
     }
 
-    println("\nSpark UI: http://localhost:4040")
-    println("ENTER zum Beenden")
-    scala.io.StdIn.readLine()
-    spark.stop()
+    //println("\nSpark UI: http://localhost:4040")
+    //println("ENTER zum Beenden")
+    //scala.io.StdIn.readLine()
+    //spark.stop()
   }
 }
