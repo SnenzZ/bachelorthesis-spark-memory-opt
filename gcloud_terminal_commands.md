@@ -17,14 +17,34 @@ spark:spark.history.fs.logDirectory=gs://spark-memory-opt-bucket/spark-history"
 gsutil cp target/scala-2.12/spark-memory-opt-assembly-0.1.jar gs://spark-memory-opt-bucket/jars/
 ```
 
-## Create a job
+## Create a job with baseline config
 ```bash
-gcloud dataproc jobs submit spark \
+gcloud dataproc clusters create baseline-cluster \
   --region=europe-west3 \
-  --cluster=cc-single \
-  --class=CCJob \
-  --jars=gs://spark-memory-opt-bucket/jars/spark-memory-opt-assembly-0.1.jar \
-  --properties=spark.executor.instances=1,spark.executor.cores=2,spark.executor.memory=4g,spark.driver.memory=4g \
-  -- gs://spark-memory-opt-bucket/data/web-Google.txt gs://spark-memory-opt-bucket/out/cc-webgoogle
+  --zone=europe-west3-a \
+  --master-machine-type=n2-standard-4 \
+  --master-boot-disk-size=100GB \
+  --num-workers=3 \
+  --worker-machine-type=n2-standard-4 \
+  --worker-boot-disk-size=100GB \
+  --image-version=2.2-debian12 \
+  --optional-components=JUPYTER \
+  --enable-component-gateway \
+  --properties spark:spark.history.fs.logDirectory=gs://spark-memory-opt-bucket/spark-history
 
+
+```
+
+## Create a cluster for history server
+```bash
+gcloud dataproc clusters create history-server \
+  --region=europe-west3 \
+  --zone=europe-west3-a \
+  --single-node \
+  --master-machine-type=n2-standard-2 \
+  --master-boot-disk-size=50GB \
+  --image-version=2.2-debian12 \
+  --optional-components=JUPYTER \
+  --enable-component-gateway \
+  --properties spark:spark.history.fs.logDirectory=gs://spark-memory-opt-bucket/spark-history
 ```
