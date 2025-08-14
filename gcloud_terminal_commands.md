@@ -31,8 +31,6 @@ gcloud dataproc clusters create baseline-cluster \
   --optional-components=JUPYTER \
   --enable-component-gateway \
   --properties spark:spark.history.fs.logDirectory=gs://spark-memory-opt-bucket/spark-history
-
-
 ```
 
 ## Create a cluster for history server
