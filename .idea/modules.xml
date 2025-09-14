@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bachelorthesis-spark-memory-opt/spark-memory-opt.iml" filepath="$PROJECT_DIR$/.idea/modules/bachelorthesis-spark-memory-opt/spark-memory-opt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bachelorthesis-spark-memory-opt/spark-memory-opt.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bachelorthesis-spark-memory-opt/spark-memory-opt.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bachelorthesis-spark-memory-opt/spark-memory-opt.spark-memory-opt-build.iml" filepath="$PROJECT_DIR$/.idea/modules/bachelorthesis-spark-memory-opt/spark-memory-opt.spark-memory-opt-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bachelorthesis-spark-memory-opt/spark-memory-opt.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bachelorthesis-spark-memory-opt/spark-memory-opt.test.iml" />
+    </modules>
+  </component>
+</project>
