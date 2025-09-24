@@ -1,0 +1,3 @@
+algorithm, dataset,run_id,app_id,duration_s,gc_s,shuffle_read_gb,shuffle_write_gb,spill_mem_mb,spill_disk_mb
+CC,SOC,3,application_1757697248887_0001,186
+CC,SOC,4,application_1757697248887_0002,156
