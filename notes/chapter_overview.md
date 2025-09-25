@@ -21,6 +21,7 @@
 - Graph Workloads
 - Metrics & Instrumentation (Definition primär/sekundär, Quellen: SparkUI/Eventlogs/JFR)
 - Experimental Flow
+- Macht es noch Sinn die Default Parameter zu erläutern?
 
 ## Chapter 5: Experimental Setup
 - Datasets
