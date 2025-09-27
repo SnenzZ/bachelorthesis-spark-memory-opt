@@ -1,7 +1,6 @@
 ## Hyoptheses 1 - Serializer
 ### Run 1 - 4
-Die Testergebnisse zeigen eine leichte Verbesserung der GC Time, insbesondere wenn man von Java Serializer auf Kryo Serializer ändert
+Die End-To-End Time wird schlechter, wenn wir den Kryo Serializer verwenden. Dies ist komisch zu betrachten, da dies gegen unserer Hypothese entspricht.
 
-Mit größeren Datasets ist der Unterschied wahrscheinlich stärker bemerkbar.
+Bei SOC haben wir z.B. eine Verschlechterung von 3.1 min auf 2.7 min in der Duration (Driver Time).
 
-Bei SOC haben wir z.B. eine Verbesserung von 3.1 min auf 2.7 min in der Duration (Driver Time).
